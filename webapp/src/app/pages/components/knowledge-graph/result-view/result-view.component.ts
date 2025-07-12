@@ -516,4 +516,30 @@ export class ResultViewComponent {
       console.error('Error logging activity:', error);
     }
   }
+
+  /*
+  generateConceptColor(): String {
+    hexValues = [pink[300], purple[300], indigo[300], blue[300], cyan[300], teal[300], green[300], lime[300], amber[300], brown[300]];
+
+  }
+  */
+
+  generateRandomRGB(indexcolor: number): string {
+    const hexValues = [
+      '#F06292', // pink[300]
+      '#BA68C8', // purple[300]
+      '#7986CB', // indigo[300]
+      '#64B5F6', // blue[300]
+      '#4DD0E1', // cyan[300]
+      '#4DB6AC', // teal[300]
+      '#81C784', // green[300]
+      '#DCE775', // lime[300]
+      '#FFD54F', // amber[300]
+      '#A1887F', // brown[300]
+    ];
+    console.log(indexcolor)
+    return hexValues[indexcolor] || '#A1887F'; // Default color if index is out of range
+
+  
+}
 }
